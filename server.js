@@ -6,7 +6,6 @@ const fileupload = require('express-fileupload');
 
 const apiRoutes = require('./src/routes');
 
-/*
 mongoose.connect(process.env.DATABASE, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
@@ -16,9 +15,8 @@ mongoose.Promise = global.Promise;
 mongoose.connection.on('error', (error) => {
 	console.log('Error: ', error.message);
 });
-*/
 
-const database = (module.exports = () => {
+/*const database = (module.exports = () => {
 	const connectionParams = {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
@@ -31,7 +29,7 @@ const database = (module.exports = () => {
 	}
 });
 
-database();
+database();*/
 
 const server = express();
 
